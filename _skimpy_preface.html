@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.23">
 <meta name="author" content="Tim McMichael">
-<title>Skimpy C#: An Introduction to Programming - TEST 1!!</title>
+<title>Skimpy C#: An Introduction to Programming</title>
 <style>
 /* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
 
@@ -125,15 +125,58 @@ a {
              .nav-footer > p > a {white-space: nowrap;}</style>
 </head>
 <body id="_skimpy_preface" class="article toc2 toc-left">
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const fileName = window.location.pathname.split('/').pop(); // Get current file name
+      console.log("Current file name:", fileName);
+
+      // Update the Light Mode link dynamically
+      const lightLink = document.querySelector("#header a.light-mode");
+      if (lightLink) {
+        lightLink.href = `https://timmcmichael.github.io/skimpy-csharp/${fileName}`;
+        lightLink.textContent = `Light Mode`;
+      }
+
+      // Update the Dark Mode link dynamically
+      const darkLink = document.querySelector("#header a.dark-mode");
+      if (darkLink) {
+        darkLink.href = `https://timmcmichael.github.io/skimpy-csharp-dark/${fileName}`;
+        darkLink.textContent = `Dark Mode (experimental)`;
+      }
+    });
+</script>
+
 <div id="header">
-<h1>Skimpy C#: An Introduction to Programming - TEST 1!!</h1>
+    <span>
+      <a class="light-mode" href="https://timmcmichael.github.io/skimpy-csharp/current-file">Light Mode</a>
+      &nbsp;|&nbsp;
+      <a class="dark-mode" href="https://timmcmichael.github.io/skimpy-csharp-dark/current-file">Dark Mode</a>
+    </span>
+</div>
+
+
+<!--
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const fileName = window.location.pathname.split('/').pop();
+      console.log("Current file name:", fileName);
+      // Optionally, inject it into the page
+      document.getElementById("current-file").textContent = fileName;
+    });
+  </script>
+<div id="header">
+    <span><a href="https://timmcmichael.github.io/skimpy-csharp/current-file">Light Mode (index)</a>&nbsp;|&nbsp;<a href="https://timmcmichael.github.io/skimpy-csharp-dark/index">Dark Mode (experimental)</a></span>
+</div>
+-->
+<div id="header">
+<h1>Skimpy C#: An Introduction to Programming</h1>
 <div class="details">
 <span id="author" class="author">Tim McMichael</span><br>
 <span id="email" class="email"><a href="mailto:tim.mcmichael@estrellamountain.edu">tim.mcmichael@estrellamountain.edu</a></span><br>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Skimpy Contents</div>
-<p><span class="toc-root"><a href="index.html">Skimpy C#: An Introduction to Programming - TEST 1!!</a></span></p><ul class="sectlevel1">
+<p><span class="toc-root"><a href="index.html">Skimpy C#: An Introduction to Programming</a></span></p><ul class="sectlevel1">
 <li><a href="_skimpy_preface.html"><span class="toc-current">Skimpy Preface</span></a>
 </li>
 <li><a href="_how_to_use_this_book.html">How to Use This Book</a>
@@ -191,13 +234,13 @@ a {
 </div>
 </div>
 <div class="paragraph nav-footer">
-<p>↑ Up: <a href="index.html">Skimpy C#: An Introduction to Programming - TEST 1!!</a> | Next: <a href="_how_to_use_this_book.html">How to Use This Book</a> →</p>
+<p>↑ Up: <a href="index.html">Skimpy C#: An Introduction to Programming</a> | Next: <a href="_how_to_use_this_book.html">How to Use This Book</a> →</p>
 </div>
 </div>
 <div id="footer">
-<div id="footer-text">
-Last updated 2025-03-17 19:59:23 UTC
-</div>
+    <div id="footer-text">
+        Tripucka Edition,&nbsp;revised&nbsp;2025-03-17
+    </div>
 </div>
 </body>
 </html>
